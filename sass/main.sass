@@ -1,0 +1,1135 @@
+@import "fonts"
+@import "reset"
+
+html
+
+body
+	z-index: 3
+	font-size: 12px
+	margin: 0 auto
+
+.clear:after
+	display: table
+	content: ""
+	clear: both
+
+.wrapper
+	width: 1200px
+	max-width: 90%
+	margin: 0 auto
+
+.inline
+	display: inline-block
+
+
+
+.header
+	background: url(../img/hd-bg.png) center top no-repeat
+	background-size: auto 100%
+	min-height: 981px
+	padding: 34px 10px
+	box-sizing: border-box
+
+	&__wrapper
+
+	&__left
+		width: 470px
+		float: left
+		margin-left: 0px
+
+	&__logo
+		height: 62px
+		width: 347px
+		margin: 10px 0 0 70px
+
+	&__announcement  /* str 127 */
+		margin: 50px 0 0 60px
+
+	&__title
+		font: 110px/93px proximanova-extrabold
+		text-transform: uppercase
+		letter-spacing: 0.05em
+		color: #542749
+		margin: 37px 0 0 0px
+		width: 90%
+
+		div
+			font: 44px/46px proximanova-bold
+			letter-spacing: 0.05em
+			width: 350px
+			margin-top: -3px
+			width: 90%
+
+	&__video
+		width: 118px
+		height: 118px
+		margin: 20px 0 0 70px
+		display: block
+
+
+
+
+	&__right
+		float: right
+		width: 434px
+		height: 822px
+
+	&__contact
+		font: 18px/14px proximanova-regular
+		color: #66b045
+		margin: 0 0 0 16px
+
+	&__phone
+		background: url(../img/hd-phone.png) no-repeat
+		background-position: left
+		padding-left: 23px
+		letter-spacing: 0.03em
+		width: 156px
+		height: 15px
+
+	&__mail
+		background: url(../img/hd-mail.png) no-repeat
+		background-position: left
+		padding-left: 20px
+		letter-spacing: 0.03em
+		width: 156px
+		height: 15px
+		margin-left: 17px
+
+	&__metro
+		font: 18px/20px proximanova-bold
+		background: url(../img/hd-metro.png) no-repeat
+		background-position: left
+		padding-left: 24px
+		letter-spacing: 0.03em
+		width: 156px
+		height: 15px
+		margin: 30px 0 0 0px
+		color: #684360
+
+	&__address
+		font-size: 16px/20px
+		margin: 6px 0 0 23px
+		letter-spacing: -0.04em
+
+	&__form  /* str 27 */
+
+	&__socnet
+		margin: 7px 0 0 0
+		text-align: center
+
+		a
+			margin-left: 9px
+
+.announcement
+
+	&__top
+		width: 250px
+		height: 48px
+		color: #66b045
+		text-transform: uppercase
+
+		div:nth-child(1)
+			float: left
+			font: 83px/60px proximanova-bold
+			letter-spacing: -0.05em
+			display: inline-block
+
+	&__time
+		width: 175px
+		height: 48px
+		margin-left: 87px
+
+		div:nth-child(1)
+			font: 26px/20px proximanova-extrabold
+			letter-spacing: 0.05em
+			height: 24px
+			width: 100%
+
+		div:nth-child(2)
+			font: 30px/38px proximanova-regular
+			letter-spacing: 0.05em
+			height: 24px
+			width: 100%
+
+	&__bottom
+		font: 18px/20px proximanova-bold
+		width: 235px
+		height: 40px
+		margin: 24px 0 0 8px
+		letter-spacing: 0.035em
+		color: #66b045
+		text-transform: uppercase
+
+		div
+			width: 210px
+
+.form
+	height: 597px
+	width: 434px
+	margin: 42px 4px 0 0
+	background: rgba(44,76,101,.4)
+	padding-top: 47px
+
+	&__title
+		font: 41px/30px proximanova-semibold
+		letter-spacing: 0.03em
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		opacity: 1 !important
+		z-index: 2
+
+		div
+			font: 18px/34px proximanova-semibold
+			letter-spacing: 0.02em
+
+	input[type='text'].styler
+		font: 18px/0 proximanova-regular
+		padding-left: 22px
+		width: 318px
+		height: 60px
+		border-radius: 0px
+		background: #ebeef0
+		margin: 20px auto
+		display: block
+		box-sizing: border-box
+		opacity: 1
+
+	input::placeholder
+		color: #839fb1
+
+	&__toggle
+		top: 5px
+		right: 2px
+
+	&__checkbox
+		text-align: center
+		margin: 30px auto 25px
+
+	&__btn
+		margin: 0 auto
+
+	&__bottom-txt
+		font: 14px/36px proximanova-semibold
+		color: #fff
+		text-transform: uppercase
+		margin: 0 auto
+		margin-top: 8px
+		letter-spacing: .05em
+		width: 90%
+		text-align: center
+
+.toggle
+	position: relative
+	text-align: center
+	width: 305px
+	height: 50px
+	margin: 0 auto
+
+	input[type="checkbox"],
+	label,
+	label::before,
+	label::after,
+		appearance: none
+		display: inline-block
+		border-radius: 25px
+		transition: .35s ease-in-out
+		box-sizing: border-box
+		cursor: pointer
+
+	label
+		width: 305px
+		height: 50px
+		overflow: hidden
+		border: 1px solid #fff
+
+		span:nth-child(1)
+			position: relative
+			font: 12px/12px proximanova-semibold
+			color: #839fb1
+			text-transform: uppercase
+			width: 50px
+			right: 64px
+			top: 13px
+			letter-spacing: 0.05em
+			transition: all .5s ease
+
+		span:nth-child(2)
+			position: relative
+			font: 12px/12px proximanova-semibold
+			color: #fff
+			text-transform: uppercase
+			width: 50px
+			left: 88px
+			bottom: 11px
+			letter-spacing: 0.05em
+			transition: all .5s ease
+
+	input[type="checkbox"]
+		position: absolute
+		z-index: 0
+		width: 143px
+		height: 42px
+		top: 7%
+		left: 1.5%
+		background: #fff url(../img/hd-hat.png) no-repeat 12px center
+		outline: none
+
+	input[type="checkbox"]:checked
+		left: 51.5%
+
+	input[type="checkbox"]:checked span
+		color: red
+
+	input[type="checkbox"]:checked + label span:nth-child(2)
+		color: #839fb1
+
+	input[type="checkbox"]:checked + label span:nth-child(1)
+		color: #fff
+
+.checkbox
+	max-width: 255px
+
+	&__win
+		display: none
+
+		&:checked + label span
+			background:  url(../img/hd-check-on.png) center center no-repeat
+
+	&__label
+		font: 12px/14px proximanova-regular
+		color: #fff
+		text-transform: uppercase
+		letter-spacing: 0.05em
+		width: 150px
+
+		span
+			float: left
+			width: 34px
+			height: 31px
+			margin-right: -2px
+			vertical-align: middle
+			cursor: pointer
+			background: #fff
+			background:  url(../img/hd-check-off.png) center center no-repeat
+
+.btn
+	font: 18px/64px proximanova-bold
+	width: 321px
+	height: 64px
+	background: #542749
+	display: block
+	text-transform: uppercase
+	text-align: center
+	color: #fff
+	letter-spacing: 0.05em
+
+.socnet
+
+	&__title
+		font: 12px/12px proximanova-regular
+		color: #426176
+		text-transform: uppercase
+		margin-bottom: 7px
+
+	&__sprite
+		background-image: url(../img/header-spritesheet.png)
+		background-repeat: no-repeat
+		display: block
+		width: 30px
+		height: 30px
+		display: inline-block
+
+	&__sprite-hd-fb
+		background-position: -5px -5px
+
+	&__sprite-hd-g_
+		background-position: -45px -5px
+
+	&__sprite-hd-ok
+		background-position: -85px -5px
+
+	&__sprite-hd-tw
+		background-position: -125px -5px
+
+	&__sprite-hd-vk
+		background-position: -165px -5px
+
+
+
+@media only screen and (max-width : 1180px)
+
+	.form
+		width: 350px
+
+		input[type='text'].styler
+			width: 80%
+			height: 50px
+
+		&__title
+			font: 30px/30px proximanova-semibold
+
+		&__bottom-txt
+			margin-top: 40px
+
+		&__btn
+			font: 16px/55px proximanova-bold
+			width: 250px
+			height: 54px
+
+
+	.header
+
+		&__phone
+			float: right
+			display: block
+			margin-bottom: 15px
+
+		&__mail
+			float: right
+			display: block
+			width: 200px
+
+		&__metro
+			float: right
+			width: 138px
+			margin-top: 35px
+
+		&__address
+			float: right
+			width: 313px
+			margin-top: 10px
+			font-size: 16px
+
+		&__right
+			width: 350px
+
+@media only screen and (max-width : 960px)
+
+	.form
+		width: 100%
+
+		&__bottom-txt
+			width: 80%
+			padding: 0
+
+	.header
+		background-position: 40% top
+		padding-bottom: 50px
+
+		&__left
+			float: none
+			width: 90%
+
+		&__right
+			float: none
+			width: 90%
+			margin: 0 auto
+
+		&__contact
+			margin-top: 40px
+			width: 100%
+
+		&__phone, &__mail, &__metro, &__address,
+			float: left
+			width: 90%
+
+		&__mail
+			margin-left: 0
+
+		&__socnet
+			margin-bottom: 20px
+			padding-bottom: 20px
+
+@media only screen and (max-width : 740px)
+
+	.header
+		background-position: 43% top
+
+@media only screen and (max-width : 600px)
+
+	.header
+		background-position: 0% top
+
+@media only screen and (max-width : 530px)
+
+	.form
+
+		&__toggle
+			width: 200px
+			height: 40px
+
+			label
+				width: 200px
+				height: 40px
+
+				span:nth-child(1)
+					font: 10px/12px proximanova-semibold
+					top: 8px
+					right: 54px
+
+				span:nth-child(2)
+					font: 10px/12px proximanova-semibold
+					left: 53px
+					bottom: 16px
+
+		input[type="checkbox"]
+			width: 90px
+			height: 34px
+			background: #fff
+
+		input[type="checkbox"]:checked
+			left: 53.5%
+
+	.header
+		padding-bottom: 80px
+
+		&__title
+			font: 60px/55px proximanova-extrabold
+
+			div
+				font: 30px/30px proximanova-bold
+
+		&__logo, &__announcement, &__title
+			margin-left: 0
+			margin-top: 20px
+
+		&__left
+			margin: 0 auto
+
+@media only screen and (max-width : 420px)
+
+	.header
+
+		&__logo
+			width: 80%
+
+			img
+				width: 250px
+				height: auto
+
+		&__title
+			font: 40px/55px proximanova-extrabold
+
+			div
+				font: 20px/30px proximanova-bold
+
+		&__video
+			width: 80%
+			margin-left: 0
+
+
+.block-1
+	overflow: hidden
+
+	&__num
+		font: 48px/60px proximanova-bold
+		color: #66b045
+
+	&__txt
+		font: 24px/32px proximanova-regular
+
+	&__wrapper
+
+	&__flex
+		display: flex
+		flex-wrap: wrap
+		padding: 0 10px
+		position: relative
+
+
+
+	&__flex > div
+		border: 1px solid #d2cad5
+		box-sizing: border-box
+		padding: 0px 20px 20px 0px
+		margin: -1px 0 0 -1px
+
+
+	&__row-1-col-1
+		width: 67.4%
+		height: 284px
+		padding: 20px 0 0 20px
+
+	&__title
+		font: 48px/48px proximanova-extrabold
+		color: #542749
+		padding: 94px 0 0 61px
+		width: 460px
+		letter-spacing: 0.01em
+
+	&__row-1-col-2
+		width: 32.5%
+		height: 284px
+		background: #fbf9fc
+
+
+
+
+	&__row-2-col-1
+		width: 34.4%
+		min-height: 274px
+		background: #fbf9fc
+		min-width: 250px
+		z-index: 5
+
+		&::before
+			content: ""
+			display: block
+			position: relative
+			width: 5000px
+			height: 1px
+			background: #d2cad5
+			left: 10px
+			bottom: 1px
+			z-index: 5
+
+		.block-1__num
+			padding: 49px 0 0 62px
+
+		.block-1__txt
+			padding: 6px 20px 0 63px
+			max-width: 250px
+
+	&__row-2-col-2
+		width: 33.1%
+		min-height: 274px
+		background: #f5f0f7
+		min-width: 250px
+		z-index: 1
+
+		.block-1__num
+			padding: 49px 0 0 62px
+
+		.block-1__txt
+			padding: 6px 0 0 63px
+			max-width: 380px
+
+	&__row-2-col-3
+		width: 32.5%
+		min-height: 274px
+		min-width: 250px
+
+		.block-1__num
+			padding: 51px 0 0 52px
+
+		.block-1__txt
+			padding: 6px 0 0 53px
+			max-width: 275px
+
+
+
+
+	&__row-3-col-1
+		width: 34.4%
+		min-height: 267px
+
+		&::before
+			content: ""
+			display: block
+			position: relative
+			width: 5000px
+			height: 1px
+			background: #d2cad5
+			left: -5000px
+			bottom: 1px
+
+		.block-1__num
+			padding: 46px 0 0 62px
+
+		.block-1__txt
+			padding: 3px 0 0 61px
+			max-width: 260px
+
+	&__row-3-col-2
+		width: 33.1%
+		min-height: 267px
+		background: #faf7fb
+
+		.block-1__num
+			padding: 46px 0 0 62px
+
+		.block-1__txt
+			padding: 3px 0 0 63px
+			max-width: 260px
+
+	&__row-3-col-3
+		width: 32.5%
+		min-height: 267px
+		background: #faf7fb
+
+		.block-1__num
+			padding: 46px 0 0 52px
+
+		.block-1__txt
+			padding: 3px 0 0 53px
+			max-width: 180px
+
+
+
+
+	&__row-4-col-1
+		width: 67.4%
+		height: 145px
+		padding: 36px 0 0 62px !important
+
+		.block-1__bottom-txt
+			font: 18px/21px proximanova-regular
+			text-transform: uppercase
+			color: #66b045
+			width: 200px
+			display: inline-block
+			padding: 13px 0 0 39px
+			letter-spacing: 0.05em
+
+	&__row-4-col-2
+		width: 32.5%
+		height: 145px
+
+	&__btn
+		width: 305px
+		float: left
+
+
+@media only screen and (max-width : 1070px)
+
+	.block-1
+
+		&__num
+			font: 40px/60px proximanova-bold
+
+		&__txt
+			font: 18px/24px proximanova-regular
+
+		&__row-4-col-2
+			display: none
+
+		&__row-4-col-1
+			width: 100%
+
+@media only screen and (max-width : 890px)
+
+	.block-1
+
+		&__flex
+			flex-wrap: wrap
+
+		&__flex > div
+			width: 50%
+
+		div.block-1__num
+			padding-left: 50px
+
+		div.block-1__txt
+			padding-left: 50px
+
+		div.block-1__row-1-col-1
+			width: 100%
+
+		div.block-1__row-1-col-2
+			display: none
+
+		div.block-1__row-4-col-2
+			display: none
+
+		div.block-1__row-4-col-1
+			width: 100%
+			height: 170px
+
+		&__btn
+			float: none
+
+		&__row-4-col-1 .block-1__bottom-txt
+			font-size: 14px
+			padding-left: 0
+			width: 300px
+
+@media only screen and (max-width : 600px)
+
+	.block-1
+
+		&__flex > div
+			width: 100%
+			min-height: 220px
+			padding-bottom: 0
+
+		&__row-1-col-1
+			height: 50px
+
+		&__title
+			font: 40px/40px proximanova-extrabold
+			width: 220px
+			padding-left: 40px
+			padding-top: 50px
+
+		div.block-1__num
+			padding-top: 30px
+
+
+		div.block-1__row-4-col-1
+			min-height: 100px
+			padding-left: 40px !important
+
+		&__btn
+			font: 16px/55px proximanova-bold
+			width: 250px
+			height: 54px
+
+		&__row-4-col-1 .block-1__bottom-txt
+			width: 200px
+			font-size: 14px
+
+
+
+.block-2
+	background: url('../img/block-2-bg.png') center top no-repeat
+	padding: 0 0 0 51%
+	min-height: 689px
+
+	&__content
+		max-width: 461px
+		padding: 63px 0 0 0
+		box-sizing: border-box
+
+	&__title
+		font: 48px/48px proximanova-bold
+		color: #fff
+		max-width: 455px
+		letter-spacing: 0.014em
+
+	&__item-1 div, &__item-2 div, &__item-3 div
+		font: 24px/28px proximanova-regular
+		color: #fff
+
+
+	&__item-1
+		margin: 30px 0 0 5px
+		height: 125px
+		background: url('../img/block-2-icon-1.png') left center no-repeat
+
+		div
+			padding: 34px 0 0 168px
+			max-width: 165px
+
+
+	&__item-2
+		margin: 22px 0 0 5px
+		height: 125px
+		background: url('../img/block-2-icon-2.png') left center no-repeat
+
+		div
+			padding: 14px 0 0 168px
+			max-width: 280px
+
+
+	&__item-3
+		margin: 27px 0 0 5px
+		height: 125px
+		background: url('../img/block-2-icon-3.png') left center no-repeat
+
+		div
+			padding: 19px 0 0 168px
+			max-width: 235px
+
+
+@media only screen and (max-width : 1085px)
+
+	.block-2
+		background: url('../img/block-2-bg.png') -618px top no-repeat
+		padding: 0 0 0 45%
+
+@media only screen and (max-width : 825px)
+
+	.block-2
+		background: url('../img/block-2-bg.png') -1000px top no-repeat
+		padding: 0
+
+		&__title
+
+
+		&__content
+			margin-left: 10px
+
+@media only screen and (max-width : 500px)
+
+	.block-2
+
+		&__item-1 div, &__item-2 div, &__item-3 div
+			font-size: 19px
+			line-height: 24px
+
+
+
+.block-3
+	background: url('../img/block-3-bg.png') -287px top no-repeat
+	min-height: 540px
+	padding: 52px 0 0px 331px
+	box-sizing: border-box
+
+	&__content
+
+
+	&__title
+		font: 48px/48px proximanova-bold
+		color: #542749
+		letter-spacing: 0.02em
+
+
+	&__subtitle
+		font:28px/30px proximanova-semibold
+		color: #542749
+		letter-spacing: 0.017em
+		margin-top: 16px
+		max-width: 705px
+
+	&__text
+		font: 18px/24px proximanova-regular
+		color: #542749
+		letter-spacing: 0.01px
+		max-width: 600px
+		margin-top: 32px
+
+	&__dates
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-between
+		max-width: 880px
+		min-height: 130px
+		margin-top: 32px
+		border-top: 1px solid #66b045
+
+	&__announcement
+		margin-top: 27px
+
+		.announcement__time:first-child
+
+			div:last-child
+				line-height: 32px
+
+	&__announcement:first-child
+			.announcement__time
+				margin-left: 79px
+
+	&__announcement:nth-child(2)
+			.announcement__time
+				margin-left: 95px
+
+	&__bottom-section
+		display: flex
+		max-width: 680px
+
+	&__btn
+		width: 270px
+		height: 62px
+		background: #fff
+		color: #542749
+		letter-spacing: 0.02em
+		border: 1px solid #542749
+		cursor: pointer
+
+	&__btm-txt
+		font: 16px/20px proximanova-regular
+		color: #542749
+		max-width: 340px
+		margin-left: 52px
+
+		span
+			letter-spacing: 0.02em
+			font-weight: bold
+			white-space: nowrap
+
+
+
+
+@media only screen and (max-width : 1200px)
+
+	.block-3
+
+		&__announcement
+			transform: scale( .7, .7)
+
+		&__announcement:first-child
+			margin-left: -36px
+
+		&__announcement:nth-child(2),&__announcement:last-child
+			margin-left: -100px
+
+			.announcement__time
+				margin-left: 90px
+
+		&__btn
+			font: 16px/45px proximanova-bold
+			width: 200px
+			height: 44px
+			margin: 0px 20px 80px 20px
+
+@media only screen and (max-width : 1130px)
+
+	.block-3
+
+		&__title
+			font: 42px/48px proximanova-bold
+
+		&__subtitle
+			font: 18px/25px proximanova-semibold
+
+@media only screen and (max-width : 1050px)
+
+	.block-3
+		padding-left: 350px
+
+		&__text
+			margin-top: 10px
+
+@media only screen and (max-width : 980px)
+
+	.block-3
+		background-size: auto 750px
+		background-position: -535px -50px
+		padding-top: 20px
+
+		&__dates
+			flex-direction: column
+			align-items: flex-start
+
+		&__announcement
+			transform: scale( .7, .7)
+
+		&__announcement:nth-child(1)
+			margin: 30px 0 0 -30px
+
+		&__announcement:nth-child(2),
+		&__announcement:last-child
+			margin: 10px 0 0 -30px
+
+		&__bottom-section
+			margin-top: 30px
+			flex-direction: column
+
+		&__btn
+			margin: 0 20px 20px 5px
+
+		&__btm-txt
+			max-width: 100%
+			margin-left: 5px
+			padding-bottom: 0px
+			margin-bottom: 50px
+
+@media only screen and (max-width : 930px)
+
+	.block-3
+		background-size: auto 850px
+		background-position: -651px -50px
+
+@media only screen and (max-width : 825px)
+
+	.block-3
+		background-position: 950px top
+		padding: 52px 0 0 0
+
+		&__dates
+			flex-direction: row
+
+		&__announcement:nth-child(1)
+			margin: 30px 0 0 0
+
+		&__announcement:nth-child(2),
+		&__announcement:last-child
+			margin: 30px 0 0 -70px
+
+@media only screen and (max-width : 720px)
+
+	.block-3
+		padding: 52px 0 0px 15px
+
+		&__dates
+			flex-direction: column
+
+		&__announcement:nth-child(1)
+			margin: 30px 0 0 -30px
+
+		&__announcement:nth-child(2),
+		&__announcement:last-child
+			margin: 10px 0 0 -30px
+
+
+
+
+.footer
+	height: 80px
+	background: #542749
+	margin-top: -24px
+	padding: 35px 20px
+	box-sizing: border-box
+
+	&__left-side
+		float: left
+		font: 16px/15px proximanova-regular
+		color: #fff
+		letter-spacing: 0.04em
+
+	&__right-side
+		float: right
+		font: 16px/15px proximanova-regular
+		color: #fff
+		border-bottom: 1px solid #fff
+		letter-spacing: 0.04em
+
+
+
+@media only screen and (max-width : 600px)
+
+	.footer
+		padding-top: 20px
+
+		&__left-side
+			float: none
+
+		&__right-side
+			float: none
+			width: 251px
+			display: block
+			margin-top: 10px
+
+
+
+
+
+
+/*@media only screen and (max-width : 1330px)
+
+
+
+
+/*	&::after
+			content: ""
+			display: block
+			position: relative
+			width: 5000px
+			height: 1px
+			background: #000
+			left: 381px
+			bottom: -282px
+
+
+		&::before
+			content: ""
+			display: block
+			position: relative
+			width: 5000px
+			height: 1px
+			background: #000
+			left: -5000px
+			bottom: -271px
+
+
+		&::before
+			content: ""
+			display: block
+			position: absolute
+			width: 5000px
+			height: 1px
+			background: #d2cad5
+			left: 10px
+			top: 282px*/
