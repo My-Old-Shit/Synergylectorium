@@ -1,3 +1,9 @@
+if(window.matchMedia('(max-width: 1000px)').matches){
+
+	document.getElementById('one').remove()}
+
+
+
 jQuery(document).ready(function() {
 
 	jQuery('input:text, textarea').addClass('styler');
@@ -54,9 +60,7 @@ jQuery(document).ready(function() {
 });
 
 
-if(window.matchMedia('(max-width: 1000px)').matches){
 
-	document.getElementById('one').remove()}
 
 
 
