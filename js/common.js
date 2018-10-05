@@ -2,7 +2,9 @@ if(window.matchMedia('(max-width: 1000px)').matches){
 
 	document.getElementById('one').remove()}
 
+if(window.matchMedia('(max-width: 1000px)').matches){
 
+	document.getElementById('two').remove()}
 
 jQuery(document).ready(function() {
 
@@ -12,29 +14,16 @@ jQuery(document).ready(function() {
 	$(".popup-video").fancybox({
 		maxWidth	  : 600,
 		maxHeight	  : 500,
-		fitToView	  : false,
 		width		    : '100%',
 		height		  : '100%',
-		autoSize	  : false,
-		closeClick	: false,
-		openEffect	: 'none',
-		closeEffect	: 'none',
-		overlayShow : true,
-		overlayColor: '#545'
+		padding     : 0
 	});
 
 	$(".popup-map").fancybox({
 		maxWidth	  : 800,
 		maxHeight	  : 800,
-		fitToView	  : false,
 		width		    : 500,
 		height		  : 500,
-		autoSize	  : false,
-		closeClick	: false,
-		openEffect	: 'none',
-		closeEffect	: 'none',
-		overlayShow : true,
-		overlayColor: '#545'
 	});
 
 		$(".open-form").fancybox({
@@ -47,14 +36,9 @@ jQuery(document).ready(function() {
 		closeClick	: false,
 		openEffect	: 'fade',
 		closeEffect	: 'fade',
-		padding: 5,
-		margin:  [5, 30, 5, 30],
-		autoResize: true,
-		closeBtn: true,
-		overlayShow : true,
-		overlayColor: '#545',
-		overlayOpacity: 0.9,
-		overlayColor: '#000'
+		padding     : 5,
+		margin      : [5, 30, 5, 30],
+		autoResize  : true
 	});
 
 });

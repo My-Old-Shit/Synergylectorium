@@ -264,7 +264,7 @@ body {
   .header__video {
     width: 118px;
     height: 118px;
-    margin: 20px 0 0 70px;
+    margin: 20px 0 0 72px;
     display: block; }
   .header__right {
     float: right;
@@ -297,14 +297,17 @@ body {
     letter-spacing: 0.03em;
     width: 156px;
     height: 15px;
-    margin: 30px 0 0 0px;
+    margin: 29px 0 0 0px;
     color: #684360; }
-  .header__address {
-    font-size: 16px/20px;
-    margin: 6px 0 0 23px;
-    letter-spacing: -0.04em; }
+  .header__address div {
+    font: 16px/20px proximanova-regular;
+    margin: 4px 0 0 23px;
+    letter-spacing: 0.02em;
+    color: #66b045; }
+    .header__address div span {
+      white-space: nowrap; }
   .header__form {
-    margin: 42px 4px 0 0; }
+    margin: 40px 4px 0 0; }
   .header__socnet {
     margin: 7px 0 0 0;
     text-align: center; }
@@ -329,19 +332,17 @@ body {
   .announcement__time div:nth-child(1) {
     font: 26px/20px proximanova-extrabold;
     letter-spacing: 0.05em;
-    height: 24px;
     width: 100%; }
   .announcement__time div:nth-child(2) {
     font: 30px/38px proximanova-regular;
     letter-spacing: 0.05em;
-    height: 24px;
     width: 100%; }
 
 .announcement__bottom {
   font: 18px/20px proximanova-bold;
   width: 235px;
   height: 40px;
-  margin: 24px 0 0 8px;
+  margin: 22px 0 0 8px;
   letter-spacing: 0.035em;
   color: #66b045;
   text-transform: uppercase; }
@@ -393,13 +394,13 @@ body {
     text-align: center;
     margin: 30px auto 25px; }
   .form__btn {
-    margin: 0 auto; }
+    margin: -3px auto 0; }
   .form__bottom-txt {
     font: 14px/36px proximanova-semibold;
     color: #fff;
     text-transform: uppercase;
     margin: 0 auto;
-    margin-top: 8px;
+    margin-top: 5px;
     letter-spacing: .05em;
     width: 90%;
     text-align: center; }
@@ -558,11 +559,9 @@ body {
       height: 54px; }
   .header__phone {
     float: right;
-    display: block;
     margin-bottom: 15px; }
   .header__mail {
     float: right;
-    display: block;
     width: 200px; }
   .header__metro {
     float: right;
@@ -572,7 +571,9 @@ body {
     float: right;
     width: 313px;
     margin-top: 10px;
-    font-size: 16px; }
+    font-size: 16px;
+    text-align: right;
+    padding-right: 17px; }
   .header__right {
     width: 350px; } }
 
@@ -597,7 +598,8 @@ body {
       width: 100%; }
     .header__phone, .header__mail, .header__metro, .header__address {
       float: left;
-      width: 90%; }
+      width: 90%;
+      text-align: left; }
     .header__mail {
       margin-left: 0; }
     .header__socnet {
@@ -659,6 +661,34 @@ body {
   .header__video {
     width: 80%;
     margin-left: 0; } }
+
+@media only screen and (max-width: 350px) {
+  .header input[type='text'].styler {
+    font: 14px/0 proximanova-regular;
+    padding-left: 12px;
+    width: 200px;
+    height: 40px; }
+  .form {
+    height: 560px; }
+    .form__bottom-txt {
+      font: 12px/24px proximanova-semibold;
+      margin-top: 20px;
+      width: 60%; }
+  .btn {
+    font: 12px/44px proximanova-bold;
+    width: 150px;
+    height: 40px; }
+  .checkbox {
+    max-width: 200px; }
+    .checkbox__label {
+      font: 12px/14px proximanova-regular;
+      width: 200px;
+      display: block;
+      text-align: left; }
+      .checkbox__label span {
+        margin-right: 10px; }
+  .socnet {
+    margin-top: 20px; } }
 
 .block-1 {
   overflow: hidden; }
@@ -852,6 +882,12 @@ body {
     width: 200px;
     font-size: 14px; } }
 
+@media only screen and (max-width: 350px) {
+  .block-1__btn {
+    font: 12px/44px proximanova-bold;
+    width: 150px;
+    height: 40px; } }
+
 .block-2 {
   background: url("../img/block-2-bg.png") center top no-repeat;
   padding: 0 0 0 51%;
@@ -913,6 +949,16 @@ body {
   .block-2__item-1 div, .block-2__item-2 div, .block-2__item-3 div {
     font-size: 19px;
     line-height: 24px; } }
+
+@media only screen and (max-width: 350px) {
+  .block-2__title {
+    font: 38px/48px proximanova-bold;
+    color: #fff;
+    max-width: 455px;
+    letter-spacing: 0.014em; }
+  .block-2__item-1 div, .block-2__item-2 div, .block-2__item-3 div {
+    font: 24px/28px proximanova-regular;
+    color: #fff; } }
 
 .block-3 {
   background: url("../img/block-3-bg.png") center top no-repeat;
