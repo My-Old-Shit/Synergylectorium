@@ -1,3 +1,4 @@
+```javascript
 if(window.matchMedia('(max-width: 1000px)').matches){
 
 	document.getElementById('one').remove()}
@@ -42,6 +43,7 @@ jQuery(document).ready(function() {
 	});
 
 });
+```
 
 
 
